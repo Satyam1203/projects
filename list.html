@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity=
+        "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>To-do list</title></title>
+</head>
+<body>
+    <h1 class="mt-5 text-center"><i class="fas fa-tasks text-primary pr-2"></i>
+        My <span class="text-primary">To-do</span> List
+    </h1>
+    <form method="get">
+        <div class="form-group">
+            <label for="title" class="">Title:</label>
+            <input class="form-control" type="text" name="title">
+        </div>
+
+        <div class="form-group">
+            <label for="author" class="">Work Description:</label>
+            <input class="form-control" type="text" name="author">
+        </div>
+
+        <div class="form-group">
+            <label for="id" class="">Deadline:</label>
+            <input class="form-control" type="text" name="id">
+        </div>
+
+        <input type="button" class="btn mx-auto btn-primary" value="Add">
+    </form>
+    <table class="mt-5 table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Deadline</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="">
+
+        </tbody>
+    </table>
+    <p id="new"></p>
+    <script src="list.js"></script>
+</body>
+</html>
