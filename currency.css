@@ -1,0 +1,33 @@
+body{
+    text-align:center;
+    background:white url(./img/rates.jpg) no-repeat;
+    background-size:cover;
+}
+#head-top{
+    margin:70px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:underline;
+}
+#head{
+    font-family: 'Dancing Script', cursive;
+}
+a{
+    font-size:18px;
+    padding:0px 5px 0px 5px;
+    border:1px solid grey;
+    border-radius:5px;
+    background-color:#c94;
+    cursor:pointer;
+    font-family: 'Exo', sans-serif;
+}
+form{
+    font-size:16px;
+    margin:30px;
+}
+input{
+    margin:5px;
+    border-radius:5px;
+}
+.alpha{
+    font-family: 'Gugi', cursive;
+}

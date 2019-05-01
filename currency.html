@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gugi|Exo|Raleway:600i" rel="stylesheet">
+    <link rel="stylesheet" href="currency.css">
+    <title>LIVE EXCHANGE RATES</title>
+</head>
+<body>
+    <h1 id="head-top">LIVE CURRENCY EXCHANGE RATES</h1>
+    <h2 id="head">Enter 3-letter currency code</h2>
+    <form action="">
+        <span class="alpha">Base currency:</span><br>
+        <input list="currencies" name="base" id="">
+              <datalist id="currencies">
+                <option value="USD"><option value="INR"><option value="EUR">
+                <option value="BGN"><option value="NZD"><option value="ILS">
+                <option value="RUB"><option value="CAD"><option value="PHP">
+                <option value="CHF"><option value="AUD"><option value="JPY">
+                <option value="TRY"><option value="HKD"><option value="MYR">
+                <option value="HRK"><option value="CZK"><option value="IDR">
+                <option value="DKK"><option value="NOK"><option value="HUF">
+                <option value="GBP"><option value="MXN"><option value="THB">
+                <option value="ISK"><option value="ZAR"><option value="BRL">
+                <option value="SGD"><option value="PLN"><option value="KRW">
+                <option value="RON"><option value="CNY"><option value="SEK">
+              </datalist>
+              <br><br>
+        <span class="alpha">Resulting currency:</span><br>
+        <input list="currencies" name="convert" id="">
+              <datalist id="currencies">
+                <option value="USD"><option value="INR"><option value="EUR">
+                <option value="BGN"><option value="NZD"><option value="ILS">
+                <option value="RUB"><option value="CAD"><option value="PHP">
+                <option value="CHF"><option value="AUD"><option value="JPY">
+                <option value="TRY"><option value="HKD"><option value="MYR">
+                <option value="HRK"><option value="CZK"><option value="IDR">
+                <option value="DKK"><option value="NOK"><option value="HUF">
+                <option value="GBP"><option value="MXN"><option value="THB">
+                <option value="ISK"><option value="ZAR"><option value="BRL">
+                <option value="SGD"><option value="PLN"><option value="KRW">
+                <option value="RON"><option value="CNY"><option value="SEK">
+              </datalist>
+        <br><br>
+        <a>Show Exchange Rates</a><br>
+
+        <input type="text" name="result" id="">
+
+    </form>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded',()=>{
+            var base,baseUpper,curr,currUpper,obj,result;
+            document.querySelector('form').addEventListener('click',()=>{
+                base = document.querySelector('input[name=base]').value;
+                baseUpper = base.toUpperCase();
+                curr = document.querySelector('input[name=convert]').value;
+                currUpper = curr.toUpperCase();
+                exchangerate(baseUpper,currUpper);
+            });
+
+        function exchangerate(base,convert){
+            var xhr= new XMLHttpRequest();
+
+            xhr.onerror = function(){
+                document.querySelector('input[name=result]').innerHTML = "error occured";
+            };
+
+            if(xhr.readyState==0)
+                document.querySelector('input[name=result]').value = "Enter valid currency code!";
+
+            xhr.onload = function (){
+                if(this.status==200){
+                    obj = JSON.parse(this.responseText);
+                    result = eval("obj.rates."+convert);
+                    if(result==undefined)
+                        document.querySelector('input[name=result]').value = "Enter valid currency code!";
+                    else
+                        document.querySelector('input[name=result]').value = result;
+                }
+            };
+
+            xhr.open("GET", "https://api.exchangeratesapi.io/latest?base="+base, true);
+
+            xhr.send();
+            }
+
+        });
+    </script>
+</body>
+</html>
