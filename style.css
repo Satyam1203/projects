@@ -27,6 +27,9 @@
             color:red;
         }
         #footer{
+            width:100%;
+            position: fixed;
+            bottom:0px;
             text-align:center;
             background:rgb(145,145,145);
             color:white;

@@ -1,0 +1,158 @@
+*{
+    margin-top:0px;
+    font-family: Sans serif;
+}
+
+.container{
+    width:100%;
+    height:800px;
+    background-color: #f9f9f9;
+}
+
+.column1{
+    background: url('./img/insta1.png') no-repeat;
+    width:52%;
+    float:left;
+    height:800px;
+}
+
+.column2{
+    width:48%;
+    float:left;
+    height:800px;
+}
+
+.signup{
+    box-shadow: 0px 1px #f5f5f5;
+    background-color: #fff;
+    width:58%;
+    text-align: center;
+    height:565px;
+    margin-top:40px;
+    border:1px solid #ddd;
+}
+
+.login{
+    box-shadow: 0px 1px #f5f5f5;
+    background-color: #fff;
+    width:58%;
+    text-align: center;
+    margin-top:10px;
+    border:1px solid #ddd;
+}
+
+.download{
+    width:58%;
+    margin-top:20px;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom:0px;
+    padding:5px;
+    padding-top:20px;
+    font-size: 50px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight:500;
+}
+
+p{
+    margin:auto;
+    margin-top:5px;
+}
+
+.txt1{
+    width: 80%;
+    font-size:17px;
+    font-weight: 600;
+    color:#999;
+}
+
+.txt2{
+    margin-top:20px;
+    width: 70%;
+    font-size: 15px;
+    color: #999;
+}
+
+a{
+    text-decoration:none;
+}
+
+.terms{
+    font-weight: bold;
+    color:#999;
+}
+
+.line{
+    margin: 5px;
+    width:110px;
+    background-color: #ddd;
+    display: inline-block;
+    height: 1px;
+}
+
+.btn{
+    width:80%;
+    background-color: #428bef;
+    padding:6px;
+    border-radius: 5px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.link{
+    font-size: 15px;
+    text-decoration:none;
+    color: #fff;
+    font-weight: 600;
+}
+
+input{
+    width:70%;
+    padding:12px;
+    background-color: #fbfbfb;
+    margin-top:5px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.txt3{
+    padding:20px;
+    font-size: 15px;
+}
+
+.txt4{
+    font-size: 14px;
+    padding-bottom:20px;
+}
+
+.footer{
+    width:100%;
+    height:130px;
+    background-color: #f9f9f9;
+}
+
+.fcol1{
+    width:60%;
+    height:50px;
+    margin-top:80px;
+    margin-left:12%;
+    float:left;
+}
+
+.fcol2{
+    width:28%;
+    height:50px;
+    margin-top:80px;
+    float:left;
+}
+
+.links{
+    font-size: 12px;
+    color: darkblue;
+    padding:5px;
+    margin-top:70px;
+    font-weight: bold;
+}
+
