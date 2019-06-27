@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Validator</title>
+    <style>
+        *{
+            margin:0px;
+            font-family:Arial;
+            /*background-color: #678;*/
+        }
+        body{
+            overflow:scroll;
+            text-align:center;
+            background: url("https://cdn.pixabay.com/photo/2019/04/29/09/33/anonymous-4165613_960_720.jpg");
+            /*background-repeat:no repeat;*/
+            background-size:cover;
+        }
+        #form{
+            margin:auto;
+            /*background-color: #aaa;*/
+            margin-top:400px;
+            width:50%;
+            height:200px;
+        }
+        #result{
+            display:none;
+            margin:auto;
+            margin-top:300px;
+            width:50%;
+            height:200px;
+        }
+        input{
+            border:none;
+            border-radius:8px;
+            outline:0px;
+            padding:10px;
+        }
+        button{
+            margin:20px;
+            outline:0px;
+            border:1px solid #eee;
+            border-radius:5px;
+            padding:10px;
+            color:white;
+            font-weight:600;
+            background-color: #467;
+        }
+        h1{
+            padding:20px;
+            font-family:Sans serif;
+            color:#ddd;
+            font-size:40px;
+            letter-spacing:1px;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>PASSWORD VALIDATOR</h1>
+    <div id="result">
+
+    </div>
+    <div id="form">
+        <!--<img src="https://cdn.pixabay.com/photo/2019/04/29/09/33/anonymous-4165613_960_720.jpg" alt="">-->
+        <input type="text" id="pass"><br>
+        <button onclick="validate()">Submit</button>
+    </div>
+    <script src="passvalidator.js">
+    </script>
+</body>
+</html>
