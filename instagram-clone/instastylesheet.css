@@ -10,7 +10,7 @@
 }
 
 .column1{
-    background: url('./img/insta1.png') no-repeat;
+    background: url('../img/insta1.png') no-repeat;
     width:52%;
     float:left;
     height:800px;
