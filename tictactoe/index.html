@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic-T<span class="red">a</span>c-Toe</h1>
+    </header> 
+    <div class="row"><div class="playarea">
+        <div class="board">
+            <div class="block" id="b1"><p id="1" onclick="show(this)"></p></div>
+            <div class="block" id="b2"><p id="2" onclick="show(this)"></p></div>
+            <div class="block" id="b3"><p id="3" onclick="show(this)"></p></div>
+            <div class="block" id="b4"><p id="4" onclick="show(this)"></p></div>
+            <div class="block" id="b5"><p id="5" onclick="show(this)"></p></div>
+            <div class="block" id="b6"><p id="6" onclick="show(this)"></p></div>
+            <div class="block" id="b7"><p id="7" onclick="show(this)"></p></div>
+            <div class="block" id="b8"><p id="8" onclick="show(this)"></p></div>
+            <div class="block" id="b9"><p id="9" onclick="show(this)"></p></div>
+        </div> </div>
+        <div class="table"> 
+            <h3 id="titletab">Points Table:</h3>
+            <table>
+                <tr>
+                    <td>Player X :</td>
+                    <td id="points_x">0</td>
+                </tr>
+                <tr>
+                    <td>Player O :</td>
+                    <td id="points_o">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="res">
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
