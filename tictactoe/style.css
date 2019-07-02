@@ -1,0 +1,104 @@
+
+header{
+    width:100%;
+}
+
+header h1{
+    margin:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:50px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+.red{
+    color:red;
+}
+
+.row{
+    width:100%;
+}
+
+.playarea{
+    width:70%;
+    float: left;
+}
+
+.board{
+    height:320px;
+    width:320px;
+    margin:auto;
+    margin-top:100px;
+    border-radius: 15px;
+}
+
+.block{
+    height:100px;
+    width:100px;
+    float:left;
+    border:3px solid rgba(24, 80, 105, 0.459);
+    text-align:center;
+}
+
+.block p{
+    height: 100px;
+    width:100px;
+    margin:0px; 
+    font-size:50px; 
+    padding-top:10px;
+    font-family: comic sans ms;
+}
+
+#b1,#b2,#b3{
+    border-top:none;
+}
+
+#b1,#b4,#b7{
+    border-left:none;
+}
+
+#b7,#b8,#b9{
+    border-bottom:none;
+}
+
+#b3,#b6,#b9{
+    border-right:none;
+}
+
+.res{
+    width:50%;
+    margin:auto;
+}
+
+.res p{
+    text-align:center;
+    font-family:cursive;
+    font-size:30px;
+}
+
+.table{
+    width:20%;
+    height:200px;
+    float:left; 
+    margin-left:5%;
+    margin-top: 150px;
+    background-color: #f7c5f2;
+}
+
+table{
+    text-align: center;
+    margin:auto; 
+}
+
+.table h3{
+    text-decoration: underline;
+    text-align: center; 
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table td,table th{
+    font-size:25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
