@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    font-family:Arial;
+}
+
+.header h1{
+    width:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline crimson;
+    color: #dfb;
+    font-size: 50px;
+    background-color: #acb;
+    padding:20px;
+    text-align: center;
+}
+
+.container{
+    width:80%;
+    /*height:500px;*/
+    margin:auto;
+    margin-top:50px;
+    background-color: #eee;
+}
+
+#buttons{
+    width:35%;
+    float:left;
+    /*height:500px;*/
+    background-color: #ddd;
+}
+
+.main{
+    width:65%;
+    /*height:500px;*/
+    float:left;
+}
+
+#question p, #question h2 {
+    padding:20px;
+}
+
+.btn{
+    margin:15px;
+    width:25%;
+    margin-left: 4.5%;
+    height:80px;
+    outline:0px;
+    border:none;
+    font-size:20px;
+    background-color: #467;
+    color:white;
+    float:left;
+}
+
+.btn2{
+    margin:20px;
+    outline:0px;
+    padding:10px;
+    border:none;
+    font-size:20px;
+    border-radius:5px;
+    background-color: #6af;
+    color:white;
+}
+
+#finish{
+    float:right;
+    background-color: #c23;
+}
+
+#question{
+    width:80%;
+    margin:auto;
+    margin-top:50px;
+    background-color: #aaa;
+}
+
+#question h2{
+    color:#333;
+}
+
+.options{
+    width:80%;
+    margin:auto;
+}
+
+/*.options p{*/
+/*    float:left;*/
+/*}*/
+
+.opt{
+    /*width:35%;*/
+    margin-top:20px;
+    margin-left:10%;
+    display:inline-block;
+    /*float:left;*/
+}
+
+#controls{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+}
+
+#result{
+    width:80%;
+    margin:auto;
+    margin-top:10%;
+}
+
+#result h2{
+    padding:10px;
+    font-weight:400;
+    text-align:center;
+}
+
+#result p{
+    padding:20px;
+    color:#6af;
+    text-align:center;
+    font-family:Sans serif;
+}
+
+.timer{
+    width:100%; 
+    height: 50px;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+
+.timer .span{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightpink;
+    float:right;
+}
+
+#current-time{
+    position: fixed; 
+    bottom: 0px;
+    width:100%;
+    padding: 10px;
+    padding-left: 80%;
+    /* text-align: right; */
+    font-size:20px;
+    background-color: cornsilk;
+}
+

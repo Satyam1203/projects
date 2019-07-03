@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <style>
+        .container{
+            width:85%;
+            margin:auto;
+            height: 700px;
+            text-align: center;
+            background-color: #eee;
+        }
+        .blue{
+            color:#467;
+            text-decoration: bold;
+        }
+        .green{
+            color:green;
+            text-decoration: bold;
+        }
+        .orange{
+            color:orange;
+            text-decoration: bold;
+        }
+        .head h1{
+            color: darkgoldenrod;
+            background-color: lavenderblush;
+            font-size:40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .rules{
+            width:80%;
+            margin:auto;
+            background-color: #f3f3f3;
+        }
+        .rules h3{
+            font-size:30px;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .rules ul{
+            text-align: left;
+        }
+        .rules li{
+            text-align: left;
+            line-height:1.5;
+            padding:10px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+            padding:10px;
+            margin:10px;
+            border-radius: 8px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Quiz</h1>
+        </div>
+        <div class="rules">
+            <h3>Rules-</h3>
+            <ol>
+                <li>You are given maximum time of 10 minutes to complete this test.</li>
+                <li>Each question has multiple options and you have to chose the correct option.</li>
+                <li>After selecting your answer, you've to click the Submit button to save it.</li>
+                <li>You can navigate to (all) questions any number of times during the alloted time.</li>
+                <li>After selecting your answers for all questions, you should click the Finish button to end the test.</li>
+                <li>If the time ends, we'll automatically save your choice of answers.</li>
+                <li>All attempted questions are displayed in <span class="blue">blue</span>,<span class="green">green</span> or <span class="orange">orange</span> colours:
+                    <ul>
+                        <li><span class="green">Green</span> - If you have submitted your choice for the question.</li>
+                        <li><span class="orange">Orange</span> - Ifyou have visited the questions but not answered them.</li>
+                        <li><span class="blue">Blue</span> - Non-visited Questions.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <a href="index.html">Click to Play !</a>
+    </div>
+</body>
+</html>
