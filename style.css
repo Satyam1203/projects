@@ -50,6 +50,8 @@
         .img {
             width: 100%;
             height: auto;
+            min-height: 140px;
+            background: grey;
         }
         .card-body{
             background: linear-gradient(-180deg, #ddd 50%, blue 50%);
