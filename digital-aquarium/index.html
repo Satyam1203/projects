@@ -1,0 +1,42 @@
+<!-- https://codepen.io/satyam1203/pen/KwdPqvM?editors=1010 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- we may need to compile LESS first before running it (check live link on codepen to check how it works) -->
+    <title>Fish aquarium</title>
+</head>
+<body>
+        
+    <h1>Fish Aquarium</h1>
+
+    <div class="container">
+    <div class="walls">
+        <div class="wall front"></div>
+        <div class="wall left"></div>
+        <div class="wall back"></div>
+        <div class="wall right"></div>
+        <div class="wall bottom"></div>
+        
+        <div id="fishes">
+        <img src="https://png.pngtree.com/png-clipart/20250222/original/pngtree-small-fish-small-fish-cartoon-cute-cartoon-picture-image_3920714.png" />
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="controls">
+        <p>Controls (Fish): 
+        <button onclick="addFish()">+</button>
+        <button onclick="removeFish()">-</button>
+        </p>
+        <p>Toggle Fish type <button onclick="toggleFishType()">Change</button></p>
+    <p>
+        <button onClick="makeContainer3D(true)">Make it 3D</button>
+        <button onClick="makeContainer2D(false)">Make it 2D</button>
+    </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
