@@ -8,14 +8,12 @@
   transform-style: preserve-3d;
 }
 body {
-  --size: 100;
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
   width: 100%;
-  margin-left: 50px;
 }
 .container {
   margin-top: 100px;
@@ -80,26 +78,29 @@ body {
 }
 #fishes {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 #fishes img {
+  position: absolute;
   width: 60px;
   height: 60px;
   animation: roamAround 10s linear infinite;
 }
 @keyframes roamAround {
   0% {
-    margin-left: 0;
+    left: 0;
     transform: scaleX(-1);
   }
   50% {
-    margin-left: 200%;
+    left: 210%;
     transform: scaleX(-1);
   }
   51% {
     transform: scalex(1);
   }
   100% {
-    margin-left: 0;
+    left: 0;
   }
 }
 h1 {

@@ -33,16 +33,31 @@ function toggleFishType() {
   showFishes(fishCount, selectedFishType);
 }
 
-
 function showFishes(count = fishCount, fishUrl = selectedFishType) {
-  const fragment = document.createDocumentFragment();
-  for (let i = 0; i < count; i++) {
-    const img = document.createElement("img");
-    img.src = fishUrl;
+  const currentFish = fishContainer.querySelectorAll("img");
 
-    fragment.appendChild(img);
+  // If more fish are needed, add them
+  if (currentFish.length < count) {
+    for (let i = currentFish.length; i < count; i++) {
+      const img = document.createElement("img");
+      img.src = fishUrl;
+      img.style.top = `${Math.random() * 80}%`;
+      fishContainer.appendChild(img);
+    }
   }
 
-  fishContainer.innerHTML = "";
-  fishContainer.appendChild(fragment);
+  // If fewer fish are needed, remove extra fishes
+  if (currentFish.length > count) {
+    for (let i = count; i < currentFish.length; i++) {
+      currentFish[i].remove();
+    }
+  }
+
+  // Update fish type only if necessary
+  for (let i = 0; i < fishContainer.children.length; i++) {
+    const img = fishContainer.children[i];
+    if (img.src !== fishUrl) {
+      img.src = fishUrl;
+    }
+  }
 }
