@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- we may need to compile LESS first before running it (check live link on codepen to check how it works) -->
+    <link rel="stylesheet" href="./styles.css" />
     <title>Fish aquarium</title>
 </head>
 <body>
@@ -32,9 +32,8 @@
         <button onclick="removeFish()">-</button>
         </p>
         <p>Toggle Fish type <button onclick="toggleFishType()">Change</button></p>
-    <p>
-        <button onClick="makeContainer3D(true)">Make it 3D</button>
-        <button onClick="makeContainer2D(false)">Make it 2D</button>
+    <p> Toggle view
+        <button onClick="makeContainer3D()">Change</button>
     </p>
     </div>
     <script src="./script.js"></script>

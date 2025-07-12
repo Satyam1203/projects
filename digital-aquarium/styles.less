@@ -52,6 +52,7 @@ body {
   }
   
   .front {
+    display: none;
     width: calc(var(--base-width) * 2.5);
     transform: translateZ(calc(var(--base-width) * 0.5));
     
@@ -95,10 +96,15 @@ body {
   .walls {
     transform-style: preserve-3d;
     transform: rotateY(20deg);
+    
+    .wall.front {
+      display: block;
+    }
   }
 }
 
 #fishes {
+  position: relative;
   img {
     width: 60px;
     height: 60px;
