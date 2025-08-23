@@ -178,4 +178,11 @@ span{
     margin-left:5px;
 }
 
-
+.disclaimer {
+    background: #555;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    padding: 16px;
+    text-align: center;
+}
